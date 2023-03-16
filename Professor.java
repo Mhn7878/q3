@@ -18,7 +18,7 @@ public class Professor {
         this.lastname = lastname;
     }
     public void addStudent(Student student) {
-        student.addTeacher(this);
+        student.addProfessor(this);
         this.students.add(student);
     }
 
