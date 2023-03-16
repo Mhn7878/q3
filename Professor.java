@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 import  java.util.List;
 public class Professor {
-    private String firstname;
+    private String name;
     private String lastname;
     private final List<Student> students = new ArrayList();
 
-    public String getFirstname() {
-        return firstname;
+    public String getName() {
+        return name;
     }
 
     public String getLastname() {
@@ -14,7 +14,7 @@ public class Professor {
     }
 
     public Professor(String firstname, String lastname) {
-        this.firstname = firstname;
+        this.name = firstname;
         this.lastname = lastname;
     }
     public void addStudent(Student student) {
@@ -24,6 +24,12 @@ public class Professor {
 
     public List<Student> getStudents() {
         return students;
+    }
+    public void print() {
+        System.out.println("Professor " + this.name + "'s students are:");
+        for (Student student:this.students) {
+            System.out.println("- " + student.getName());
+        }
     }
 
 }
