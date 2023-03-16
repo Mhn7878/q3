@@ -24,6 +24,11 @@ public class Student {
         this.name = name;
         this.lastName = lastName;
     }
-
+    public void print() {
+        System.out.println("Student " + this.name + "'s teachers are:");
+        for (Professor teacher:this.professors) {
+            System.out.println("- " + teacher.getName());
+        }
+    }
 
 }
