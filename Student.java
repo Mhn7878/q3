@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
-    private String name;
-    private String lastName;
-    private int term;
-    private String fieldOfStudy;
-    private double score;
+    private final String name;
+    private final String lastName;
+    private final int term;
+    private final String fieldOfStudy;
+    private final double score;
 
     public int getTerm() {
         return term;
@@ -48,8 +48,8 @@ public class Student {
 
     public void print() {
         System.out.println("Student " + this.name + this.lastName + this.term + this.fieldOfStudy + this.score + "'s professors are:");
-        for (Professor teacher : this.professors) {
-            System.out.println("- " + teacher.getName());
+        for (Professor professor : this.professors) {
+            System.out.println("- " + professor.getName() + professor.getLastname() + professor.getCourse());
         }
     }
 
