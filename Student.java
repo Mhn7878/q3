@@ -12,7 +12,7 @@ public class Student {
     public String getLastName() {
         return lastName;
     }
-    public void addTeacher(Professor professor) {
+    public void addProfessor(Professor professor) {
         this.professors.add(professor);
     }
 
