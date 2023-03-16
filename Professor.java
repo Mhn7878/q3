@@ -17,6 +17,13 @@ public class Professor {
         this.firstname = firstname;
         this.lastname = lastname;
     }
+    public void addStudent(Student student) {
+        student.addTeacher(this);
+        this.students.add(student);
+    }
 
+    public List<Student> getStudents() {
+        return students;
+    }
 
 }
