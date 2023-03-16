@@ -12,6 +12,9 @@ public class Student {
     public String getLastName() {
         return lastName;
     }
+    public void addTeacher(Professor professor) {
+        this.professors.add(professor);
+    }
 
     public List<Professor> getProfessors() {
         return professors;
