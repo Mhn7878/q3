@@ -32,10 +32,11 @@ public class Professor {
         return students;
     }
     public void print() {
-        System.out.println("Professor " + this.name + this.lastname + this.course + "'s students are:");
+        System.out.println("Professor " + this.name + " " + this.lastname + " " + this.course + " " + "'s students are:");
         for (Student student:this.students) {
-            System.out.println("- " + student.getName() +student.getLastName() + student.getTerm() + student.getTerm()
-                    + student.getFieldOfStudy() + student.getScore());
+            System.out.println("- " + student.getName() + " " +student.getLastName() + " " + student.getTerm()
+                    + " " + student.getTerm() + " "
+                    + student.getFieldOfStudy() + " " + student.getScore());
         }
     }
 

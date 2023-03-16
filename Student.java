@@ -47,9 +47,9 @@ public class Student {
     }
 
     public void print() {
-        System.out.println("Student " + this.name + this.lastName + this.term + this.fieldOfStudy + this.score + "'s professors are:");
+        System.out.println("Student " + this.name + "  "+ this.lastName+ " " + this.term+  " " + this.fieldOfStudy + " " + this.score + " " + "'s professors are:");
         for (Professor professor : this.professors) {
-            System.out.println("- " + professor.getName() + professor.getLastname() + professor.getCourse());
+            System.out.println("- " + "   " + professor.getName() + " " + professor.getLastname() + " " + professor.getCourse());
         }
     }
 
